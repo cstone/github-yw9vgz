@@ -1,5 +1,5 @@
 import {ActionReducerMap } from '@ngrx/store';
-import * as bananaStore from './state/banana.state';
+import * as bananaStore from 'banana/state';
 
 export interface AppState {
   banana: bananaStore.State;

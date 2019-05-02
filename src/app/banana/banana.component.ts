@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { AppState, getMyBanana } from '../app.state';
-import { GetNewBanana } from './state';
+import { GetNewBanana } from './state/banana.state';
 
 
 @Component({
@@ -26,6 +26,7 @@ export class BananaComponent implements OnInit {
     }
 
     newBanana() {
+        this.store.dispatch(new GetNewBanana(null));
 
     }
 
